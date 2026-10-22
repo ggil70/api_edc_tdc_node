@@ -1,0 +1,21 @@
+{
+  "name": "api-edc-tdc-node",
+  "version": "1.0.0",
+  "description": "API Estado de Cuenta TDC (Credicard) - migración a Node.js de la versión Laravel 8",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/estadoCuenta.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0"
+  }
+}
